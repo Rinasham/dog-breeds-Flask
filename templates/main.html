@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for breed in list %}
+  <p><a href="/breed/{{ breed.lower() }} ">{{ breed }}</a></p>
+{% endfor %}
+
+{% endblock %}
